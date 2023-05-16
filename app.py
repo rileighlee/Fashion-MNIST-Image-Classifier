@@ -25,7 +25,7 @@ if file is None:
 else:
     image=Image.open(file)
     st.image(image,use_column_width=True)
-    prediction=import_and_predict(image,model)
+    prediction = model.predict(np.array([np.array(image.resize((28, 28)))/255.0]))
     class_names=['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 
                'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
     string="OUTPUT : "+class_names[np.argmax(prediction)]
