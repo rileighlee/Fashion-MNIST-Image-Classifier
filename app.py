@@ -10,7 +10,6 @@ st.write("""
 # Clothes Detection System"""
 )
 file=st.file_uploader("Choose clothes photo from computer",type=["jpg","png"])
-A
 import cv2
 from PIL import Image,ImageOps
 import numpy as np
