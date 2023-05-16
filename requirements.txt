@@ -3,5 +3,3 @@ tensorflow
 opencv-python-headless
 numpy
 matplotlib
-types
-pathlib
