@@ -5,7 +5,7 @@ import os
 @st.cache(allow_output_mutation=True, hash_funcs={tf.keras.Model: id})
 def load_model():
   
-    MODEL_DIR = os.path.abspath("/content/drive/MyDrive/project")
+    MODEL_DIR = os.path.abspath("model.h5")
     model_path = os.path.join(MODEL_DIR, "model.h5")
     model = tf.keras.models.load_model(model_path)
     return model
