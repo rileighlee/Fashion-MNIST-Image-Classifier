@@ -4,7 +4,7 @@ from tensorflow import keras
 from PIL import Image
 import numpy as np
 
-model = keras.models.load_model('app.h5')
+model = keras.models.load_model('model.h5')
 
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
                'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
