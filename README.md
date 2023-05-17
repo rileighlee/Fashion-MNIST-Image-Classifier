@@ -1,1 +1,1 @@
-# main2
+# Fashion MNIST Image Classifier
